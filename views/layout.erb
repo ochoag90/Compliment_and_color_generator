@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body style="background-color:<%= @color %>">
+	<%= yield %><!-- Load Template that was called from the Route -->
+	<form action="user" method="post">
+			<ul>
+				<li style="list-style-type: none;">
+					<label><h3>Type your own compliment!</h3>
+						<br>
+						<input type="text" name="user" value="<%= @comp %>">
+					</label>
+				</li>
+			</ul>
+			<button type="submit" class="btn btn-primary">Submit Compliment!</button>
+	</form>
+</body>
+</html>
